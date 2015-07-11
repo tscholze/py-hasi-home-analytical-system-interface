@@ -1,0 +1,33 @@
+<div class="device_icon">
+	<img src="{{ MEDIA_URL }}images/hasi-tmp-logo-128.png" alt="device_HASI" />
+</div>
+
+<div class="meta_data">
+	<table>
+		<tr>
+			<th>Name: </th>
+			<td>{{ subdevice.name }}</td>
+		</tr>
+		<tr>
+			<th>Typ: </th>
+			<td>{{ subdevice.model.name }}</td>
+		</tr>
+		<tr>
+			<th>Standort: </th>
+			<td>{{ subdevice.room.house.name }} / {{ subdevice.room.name }}</td>
+		</tr>
+		<tr>
+			<th>Status: </th>
+			<td>
+				{% for measurement in subdevice.measurements.all %}
+					{{ measurement.value }}
+				{% endfor %}
+			</td>
+		</tr>
+		<tr>
+			<th>Installiert am: </th>
+			<td>{{ subdevice.created }}</td>
+		</tr>
+	</table>
+</div>
+

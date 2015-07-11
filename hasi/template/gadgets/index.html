@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %} New Foobar {% endblock %}
+
+{% block content %}
+
+<div id="gadget-left" class="gadget-column">
+	<ul>
+		{% for gadget in gadgets_left %}
+		
+
+			<li>{% include "box-base.html" with title=gadget.name file="gadgets/gadget-base.html"  %}</li>
+		{% endfor %}
+	</ul>
+</div>
+
+<div id="gadget-center" class="gadget-column">
+	<ul>
+		{% for gadget in gadgets_center %}
+			<li>{% include "box-base.html" with title=gadget.name file="gadgets/gadget-base.html"  %}</li>
+		{% endfor %}
+	</ul>
+</div>
+
+<div id="gadget-right" class="gadget-column">
+	<ul>
+		{% for gadget in gadgets_right %}
+			<li>{% include "box-base.html" with title=gadget.name file="gadgets/gadget-base.html"  %}</li>
+		{% endfor %}
+	</ul>
+</div>
+<div class="clear"></div>
+{% endblock %}
+

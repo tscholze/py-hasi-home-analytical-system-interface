@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+
+{% if form.errors %}
+    {% block msg %}<!--Zugangsdaten leider falsch--> {% endblock %}
+{% endif %}
+<form method="post" action="{% url 'django.contrib.auth.views.login' %}">
+{% csrf_token %}
+{% include "box-base.html" with title="Login" file="user/login.html"  %}
+
+</form>
+
+{% endblock %}

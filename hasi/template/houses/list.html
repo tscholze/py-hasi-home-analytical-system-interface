@@ -1,0 +1,50 @@
+<div class="list_view">
+	<table>
+		<tr>
+                        <th class="align-middle">Typ</th>
+			<th class="space">Bezeichnung</th>
+			<th class="space">Standort</th>
+			<th class="align-middle">Status</th>
+			<th class="align-middle">Aktion</th>
+			<th class="align-middle">bulk</th>
+		</tr>
+			{% for house in houses %}
+				{% for room in house.rooms.all %}
+					{% for device in room.subdevices.all %}
+					<tr class="{% cycle 'odd' 'even' %}">
+                                            <td class="align-middle"><img class="icon-22"src="{{ MEDIA_URL }}/images/icons/connect_creating.png" title="Steckdose" /></td>
+						<td class="space"><a href="{{ device.get_absolute_url }}">{{ device }}</a></td>
+						<td class="space">{{ device.room.house.name }} / {{ device.room.name }} </td>
+						<td class="align-middle"> 
+							{% for measurement in device.measurements.all %}
+								{{ measurement.value }}
+							{% endfor %}</td>
+						<td class="align-middle">
+                                                    <img class="icon-18" src="{{ MEDIA_URL }}/images/icons/ledgreen.png" title="arbeitet" />
+                                                    <img class="icon-18" src="{{ MEDIA_URL }}/images/icons/messagebox_critical.png" title="loeschen" />
+                                                    <img class="icon-18" src="{{ MEDIA_URL }}/images/icons/time.png" title="Zeitplan" />
+                                                </td>
+						<td class="align-middle"><input type="checkbox"></td>								
+					</tr>
+					{% endfor %}
+				{% endfor %}
+			{% endfor %}
+                        <tr>
+                            <td colspan="6" align="right"><span style="font-size: 10px;"><a href="#" onClick="selectAll();">[alle]</a> <a href="#" onClick="selectNone()">[keine]</a></span><select><option>-</option><option>loeschen</option></select>
+                                <input type="submit" value="ok" /></td>
+                        </tr>
+
+
+	</table>
+</div>
+
+
+<script>
+function selectAll() {
+    $("input[type='checkbox']:not([disabled='disabled'])").attr('checked', true);
+}
+
+function selectNone() {
+    $("input[type='checkbox']:not([disabled='disabled'])").attr('checked', false);
+}
+</script>

@@ -1,0 +1,30 @@
+<strong>Bitte melden Sie sich mit Ihren Zugangsdaten an.</strong>
+<br />
+<br />
+
+<div class="login-box-icon">
+    <img src="{{ MEDIA_URL }}/images/icons/login.png" />
+</div>
+<div  style="float: left;">
+<table>
+<tr>
+    <td class="form_label">{{ form.username.label_tag }}</td>
+    <td>{{ form.username }}</td>
+</tr>
+<tr>
+    <td class="form_label">{{ form.password.label_tag }}</td>
+    <td>{{ form.password }}</td>
+</tr>
+
+<tr>
+    <td colspan="2" style="text-align: right;">
+    <input type="submit" value="login" />
+    <input type="hidden" name="next" value="{{ next }}" />
+    </td>
+</tr>
+</table>
+</div>
+
+<div style="clear:both;">&nbsp;</div>
+
+

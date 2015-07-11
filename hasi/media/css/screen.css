@@ -1,0 +1,491 @@
+/*
+    Document   : screen.css
+    Created on : 13.04.2011, 11:53:45
+    Author     : unfluffy Miri & Jenny
+    Description: default clean main theme
+    Colors     :
+
+
+    WEBSITE
+    Outer Background	#cff09e
+    Background 		#6e776e
+
+
+    BOX
+    BOX TITLE
+    Background color    #cff09e
+    Font color          #5e5e49
+
+    BOX CONTENT
+    Background color    #fcfcfb
+    Border              #cff09e
+    Font color 		#5e5e49
+
+
+    HEADLINE
+    HASI Font Color     #eee6ab
+    Subheading          #fffdd4
+
+
+    MEMU
+    Background color	#cff09e
+    -Font color          #fffdd4 -
+    Font color 		#6e776e
+
+
+    DROPDOWM
+    Background color	#cff09e
+    Font color a	#6e776e
+    Font color hover	#00e861
+
+
+
+
+6:25:14 PM) Bambi: box inside: fcfcfb
+(6:25:36 PM) Bambi: box ouside: cff09e
+(6:26:17 PM) Bambi: background: 6e776e
+(6:27:17 PM) Bambi: text: hasi
+(6:27:22 PM) Bambi: eee6ab
+(6:27:44 PM) Bambi: box text: 5e5e49
+(6:28:33 PM) Bambi: men� text: fffdd4
+(8:51:22 PM) Bambi: 00e861 hover dropdown menu font
+
+*/
+
+root {
+    display: block;
+}
+
+body {
+    background-color: #cff09e;
+    font-family: helvetica;
+}
+
+header {
+    background-color: transparent;
+    padding: 25px;
+}
+
+footer {
+    background-color: transparent;
+    font-size: xx-small;
+    color: #eee6ab;
+    text-align: center;
+    padding: 10px;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+a, a:visited {
+	color: #6e776e;
+	text-decoration:none;
+}
+
+.clear {
+	clear: both;
+}
+
+.superdiv {
+    width: 95%;
+    background-color: #6e776e;
+    margin-left: 25px;
+    margin-right: 50px;
+    margin-top: 25px;
+
+    -moz-box-shadow: 0px 0px 20px #888888;
+    -webkit-box-shadow: 0px 0px 20px #888888;
+    box-shadow: 0px 0px 20px #888888;
+
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.heading {
+    color: #eee6ab;
+}
+
+.subheading {
+    color: #fffdd4;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.menu {
+    margin-top: 5px;
+    margin-bottom: 75px;
+}
+
+.menu ul {
+    background-color: #cff09e;
+    color: #6e776e;
+    position:absolute;
+    display: block;
+    display: inline;
+    z-index: 1000;
+
+/*    filter:alpha(opacity=60);
+    opacity: 0.6;*/
+
+    margin-right: 0px;
+    width: 90%;
+}
+
+.menu li {
+    float: left;
+    display: inline;
+    cursor: pointer;
+    position: relative;
+    padding:5px;
+
+/*    width: 180px;*/
+    margin-right: 45px;
+}
+
+.menu li:first-child {
+    margin-left: 20px;
+}
+
+.menu li:hover, a:hover {
+    color: #00e861;
+}
+
+
+/*Submenu*/
+.menu li ul {
+    position: absolute;
+    display: none;
+    line-height: 16px;
+    width:130px;
+    background-color: #cff09e;
+/*    filter:alpha(opacity=60);
+      opacity: 0.6;*/
+    margin-left: -10px;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+    color: #6e776e;
+    margin-right: 100px;
+    padding: 5px 5px 5px 0px;
+    width: 130px;
+    margin-left: 10px;
+}
+
+.menu li ul li:first-child {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.menu li ul li:hover {
+    color: #00e861;
+}
+
+.content {
+    position: relative;
+}
+
+
+
+/*  BOXEN !!  */
+
+
+.box {
+    width: 95%;
+/*    height: auto;*/
+	margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+.box_mini {
+    width: 400px;
+    margin-left: 25px;
+}
+
+.box_mini_content {
+/*    border: 6px solid  #cff09e;*/
+    border-left: 6px solid  #cff09e;
+    border-right: 6px solid  #cff09e;
+    border-bottom: 6px solid  #cff09e;
+
+    background-color: #fcfcfb;
+    color: #5e5e49;
+    padding: 15px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-border-radius-bottomleft: 15px;
+    -webkit-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft:15px;
+    -moz-border-radius-bottomright:15px;
+}
+
+.boxtitle {
+    /*    border: 3px solid  #cff09e;*/
+    background-color: #cff09e;
+    color: #5e5e49;
+    text-align: center;
+    padding: 5px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-border-radius-topleft: 15px;
+    -webkit-border-radius-topright: 15px;
+    -moz-border-radius-topleft:15px;
+    -moz-border-radius-topright:15px;
+}
+
+/*Box Hintergrund mit runden Ecken */
+.boxcontent {
+/*    border: 6px solid  #cff09e;*/
+    border-left: 6px solid  #cff09e;
+    border-right: 6px solid  #cff09e;
+    border-bottom: 6px solid  #cff09e;
+
+    background-color: #fcfcfb;
+    color: #5e5e49;
+    padding: 15px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-border-radius-bottomleft: 15px;
+    -webkit-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft:15px;
+    -moz-border-radius-bottomright:15px;
+}
+
+.boxcontent h2 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: #fcfcfb;
+}
+
+.boxcontent h2:first-child {
+    padding-top: 0px;
+}
+
+
+.device_icon {
+    float: left;
+}
+
+.clear_both {
+    clear: both;
+}
+
+
+.meta_data {
+    float: right;
+}
+
+.meta_data table {
+    border-collapse: collapse;
+    border: 0;
+}
+
+.meta_data th {
+    text-align: right;
+}
+
+.meta_data td {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/*
+.box_in_box {
+    background-color: #fcfcfb;
+    border: 4px solid #cff09e;
+    color: #5e5e49;
+    padding: 5px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-border-radius-topleft: 15px;
+    -webkit-border-radius-topright: 15px;
+    -moz-border-radius-topleft:15px;
+    -moz-border-radius-topright:15px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-border-radius-bottomleft: 15px;
+    -webkit-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft:15px;
+    -moz-border-radius-bottomright:15px;
+
+    width: 30%;
+}*/
+
+
+/*Listenuebersicht */
+.list_view table {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #cff09e;
+    color: #5e5e49;
+    background-color: #cff09e;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-border-radius-topleft: 15px;
+    -webkit-border-radius-topright: 15px;
+    -moz-border-radius-topleft:15px;
+    -moz-border-radius-topright:15px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-border-radius-bottomleft: 15px;
+    -webkit-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft:15px;
+    -moz-border-radius-bottomright:15px;
+}
+
+/*Tabellen-kopf*/
+.list_view th {
+    line-height: 20px;
+}
+
+/*Tabellen-zeilen*/
+.odd-1 td, .even-0 td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.odd {
+    background-color: #eee6ab;   /*dark*/
+}
+
+.even {
+    background-color: #fffdd4;  /*light*/
+}
+
+.space {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.align-middle {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Round Corners in Last Table Row */
+/*background-color == table-border, damit die Rundung gr�n ist*/
+
+/*Erste Zelle der letzten Reihe*/
+.list_view tr:last-child td:first-child {
+    border-bottom-left-radius: 11px;
+    -webkit-border-radius-bottomleft: 11px;
+    -moz-border-radius-bottomleft:11px;
+}
+
+/*Letzte Zelle der letzten Reihe */
+.list_view tr:last-child td:last-child {
+    border-bottom-right-radius: 11px;
+    -webkit-border-radius-bottomright: 11px;
+    -moz-border-radius-bottomright:11px;
+}
+
+/*Alle Zellen der letzten Zeile haben die Farbe von row-0*/
+
+.width-100 {
+    width: 100px;
+}
+
+
+ul.column {
+    float: left;
+    width: 50%;
+}
+
+ul.column li {
+    margin-bottom: 20px;
+}
+
+
+
+/* GLYPHS*/
+
+img.button {
+    width: 25px;
+    height: 26px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+/*Close Button*/
+img.close {
+    background: url(../images/CloseBrowserSize.png);
+    top: -17px;
+    left: 15px;
+}
+
+img.close:hover {
+    background: url(../images/CloseHoBrowserSize.png);
+}
+
+/*Minimize Button*/
+img.minimize {
+    background: url(../images/MiniBrowserSize.png);
+    top: -17px;
+    left: 8px;
+}
+
+img.minimize:hover {
+    background: url(../images/MiniHoBrowserSize.png);
+}
+
+/*Maximize Button*/
+
+img.maximize {
+    background: url(../images/MaxiBrowserSize.png);
+    top: -13px;
+    left: 8px;
+
+}
+
+img.maximize:hover {
+    background: url(../images/MaxiHoBrowserSize.png);
+}
+
+.icon-22 {
+    height: 22px;
+    width: 22px;
+}
+
+.icon-18 {
+    height: 18px;
+    width: 18px;
+}
+
+.form_label {
+    color: #5e5e49;
+    font-size: 14px;
+}
+.login-box-icon {
+    float: left;
+    padding-right: 20px;
+}

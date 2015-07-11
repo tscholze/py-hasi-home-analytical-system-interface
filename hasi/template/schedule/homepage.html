@@ -1,0 +1,17 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block tab_id %}id="home_tab"{% endblock %}
+
+{% block body %}
+    {% blocktrans %}
+        <h1>Calendar using <strong>django-schedule</strong></h1>
+    {% endblocktrans %}
+        {% blocktrans %}
+        <h2>Want to see it in action?</h2>
+    {% endblocktrans %}
+        <p><a href="{% url schedule %}">{% trans "The list of available Calendars." %}</a></p><br/>
+{% endblock %}

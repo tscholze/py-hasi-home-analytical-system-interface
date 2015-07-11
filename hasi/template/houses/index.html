@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %} Haus liste {% endblock %}
+
+{% block content %}
+
+{% include "box-base.html" with title="Filter" file="houses/filter.html"  %}
+{% include "box-base.html" with title="ausgew&auml;hlte Ger&auml;te"  file="houses/list.html"  %}
+
+{% endblock %}

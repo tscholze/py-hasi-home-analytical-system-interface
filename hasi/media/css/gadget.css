@@ -1,0 +1,19 @@
+.gadget-column {
+	width: 33%;
+}
+
+.gadget-column {
+	width: 33%;
+	float: left;
+}
+
+#gadget-center {
+	width: 34%;
+}
+
+.device .name {
+	float: left;
+	width: 200px
+}
+
+

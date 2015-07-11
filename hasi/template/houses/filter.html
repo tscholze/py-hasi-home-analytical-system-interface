@@ -1,0 +1,29 @@
+<h2>Bitte w&auml;hlen Sie ein Ger&auml;t aus.</h2>
+	Geb&auml;ude: <select class="width-100">
+		<option> Alle </option>
+		{% for house in houses %}
+			 <option class="{{ house.slug }}">{{ house }}</option>
+		{% endfor %}        
+	</select>
+
+	Raum: <select class="width-100">
+		<option> Alle </option>
+		{% for house in houses %}
+			{% for room in house.rooms.all %}
+				 <option class="{{ house.slug }} {{ room.slug }}">{{ room }}</option>
+			{% endfor %}
+		{% endfor %}          
+	</select>
+
+
+	Gerät: <select class="width-100">
+		<option> Alle </option>
+		{% for house in houses %}
+			{% for room in house.rooms.all %}
+				{% for device in room.subdevices.all %}
+				 <option class="{{ house.slug }} {{ room.slug }} {{ device.slug }}">{{ device }}</option>
+				{% endfor %}				
+			{% endfor %}
+		{% endfor %} 
+	</select>
+

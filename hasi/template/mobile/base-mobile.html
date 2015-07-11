@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>HASI-mobile</title>
+        <link rel="stylesheet" href="{{ MEDIA_URL }}javascript/jqt/themes/jqt/theme.min.css" type="test/css">
+        <style type="text/css" media="screen">@import "{{ MEDIA_URL }}javascript/jqt/jqtouch.min.css";</style>
+        <script src="{{ MEDIA_URL }}javascript/jqt/jquery.1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="{{ MEDIA_URL }}javascript/jqt/jqtouch.min.js" type="application/x-javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            var jQT = new $.jQTouch({
+                icon: 'img/hasi-tmp-logo-128.png',
+                addGlossToIcon: true,
+                startupScreen: '{{ MEDIA_URL }}images/hasi-tmp-logo-128.png',
+                statusBar: 'default',
+                startupScreen: '{{ MEDIA_URL }}images/hasi-tmp-logo-320.png',
+                preloadImages: [
+                    '{{ MEDIA_URL }}javascript/jqt/themes/jqt/img/back_button.png',
+                    '{{ MEDIA_URL }}javascript/jqt/themes/jqt/img/back_button_clicked.png',
+                    '{{ MEDIA_URL }}javascript/jqt/themes/jqt/img/button_clicked.png',
+                    '{{ MEDIA_URL }}javascript/jqt/themes/jqt/grayButton.png',
+                    '{{ MEDIA_URL }}javascript/jqt/themes/jqt/img/whiteButton.png',
+                    '{{ MEDIA_URL }}javascript/jqt/themes/jqt/img/loading.gif'
+                ]
+            });
+        </script>
+        <style type="text/css" media="screen">
+            body.fullscreen #home .info {
+                display: none;
+            }
+            #about {
+                padding: 100px 10px 40px;
+                text-shadow: rgba(255, 255, 255, 0.3) 0px -1px 0;
+                font-size: 13px;
+                text-align: center;
+                background: #161618;
+            }
+            #about p {
+                margin-bottom: 8px;
+            }
+            #about a {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .footer {
+                font-size:  8px;
+                text-align: center;
+                color: #333333;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            Start Screen
+        -->
+        <div id="home" class="current">
+            <div class="toolbar">
+                <h1>HASI - mobile</h1>
+                <a class="button slideup" id="infoButton" href="#about">About</a>
+            </div>
+
+            <ul class="rounded">
+                <li align="center"><img src="img/hasi-tmp-logo-64.png" /></li>
+            </ul>
+
+            <ul class="rounded">
+                <li class="forward"><a href="#ui">Notifications</a> <small class="counter">4</small></li>
+                <li class="forward"><a href="#devices">Devices</a> <small class="counter">1 active</small></li>
+                <li class="forward"><a href="#room-remote">Room Remote</a></li>
+            </ul>
+            <h2>Miscellaneous</h2>
+            <ul class="rounded">
+                <li class="forward"><a href="" target="_blank">Video</a></li>
+                <li class="forward"><a href="#" target="_blank">History</a></li>
+            </ul>
+            <ul class="individual">
+                <li><a href="§" target="_blank">Call 911</a></li>
+                <li><a href="#" target="_blank">Emergency Stop</a></li>
+            </ul>
+
+            <div class="footer">&copy; HASI Inc. 2011</div>
+        </div>
+
+        <!--
+            Notifications
+        -->
+        <div id="notification">
+            <div class="toolbar">
+                <h1>Notifications</h1>
+                <a class="back" href="#">Home</a>
+            </div>
+
+            <h2>Lists</h2>
+            <ul class="rounded">
+                <li class="forward"><a href="#edge">...</a></li>
+            </ul>
+        </div>
+
+
+        <!--
+                About
+        -->
+        <div id="about" class="selectable">
+            <p><img src="{{ MEDIA_URL }}images/hasi-tmp-logo-128.png" /></p>
+            <p><strong>HASI</strong><br />mobile</p>
+            <p><em>fluffy energy saving</em></p>
+            <p>
+                <a href="http://e-metering.informatik.fh-augsburg.de" target="_blank">&copy HASI Inc.</a>
+            </p>
+            <p><br /><br /><a href="#" class="grayButton goback">Close</a></p>
+        </div>
+
+
+        <!--
+            Room Remote
+        -->
+        <div id="room-remote">
+            <div class="toolbar">
+                <h1>Remote</h1>
+                <a class="back" href="#home">Home</a>
+            </div>
+
+            <h2>Room</h2>
+            <ul class="rounded">
+                <li>
+                    <select id="lol">
+
+                        <optgroup label="First Floor">
+                            <option value ="" enabled="enabled">Kitchen</option>
+                            <option value ="">Livingroom</option>
+                            <option value ="">Entrance</option>
+                        </optgroup>
+
+
+                        <optgroup label="Second Floor">
+                            <option value ="">Parent's Bedroom</option>
+                            <option value ="">Foo's Bedroom</option>
+                            <option value ="">Bath</option>
+                        </optgroup>
+
+                        <optgroup label="Roofgarden">
+                            <option value ="">Terrace</option>
+                        </optgroup>
+                    </select>
+                </li>
+
+            </ul>
+
+            <h2>Ambient / Modus</h2>
+            <ul class="rounded">
+                <li>
+                    <select id="lol">
+
+                        <optgroup label="Scheme A">
+                            <option value ="mercedes">Good Morning</option>
+                            <option value ="audi">Concentration</option>
+                            <option value ="audi">Power Nap</option>
+                        </optgroup>
+
+
+                        <optgroup label="Scheme B">
+                            <option value ="mercedes">Romantic</option>
+                            <option value ="audi">Warm and fluffy</option>
+                            <option value ="audi">Fresh Air</option>
+                        </optgroup>
+                    </select>
+                </li>
+
+            </ul>
+
+            <a href="#" class="whiteButton goback" style="margin:0 10px;color:rgba(0,0,0,.9)">Apply</a>
+        </div>
+
+        <!--
+            Device
+        -->
+
+        <div id="devices">
+            <div class="toolbar">
+                <h1>Devices</h1>
+                <a class="back" href="#">Home</a>
+            </div>
+            <h2>Living Room</h2>
+            <ul class="rounded">
+                <li>Uplight <span class="toggle"><input type="checkbox" /></span></li>
+                <li>Couch left <span class="toggle"><input type="checkbox" /></span></li>
+                <li>Couch right <span class="toggle"><input type="checkbox" /></span></li>
+            </ul>
+
+            <h2>Bedroom</h2>
+            <ul class="rounded">
+                <li>Closet inside <span class="toggle"><input type="checkbox" /></span></li>
+                <li>Closed outside <span class="toggle"><input type="checkbox" /></span></li>
+                <li>Nightlight <span class="toggle"><input type="checkbox" /></span></li>
+            </ul>
+        </div>
+    </body>
+</html>

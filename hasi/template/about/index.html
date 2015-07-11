@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block title %} About HASI {% endblock %}
+{% block content %}
+
+<div class="box">
+    <div class="boxtitle">
+        <img id="modIcon" class="close" src="{{ MEDIA_URL }}images/img_trans.gif" alt="iAmAStupidElement" width="1" height="1" />
+        <img id="modIcon" class="minimize" src="{{ MEDIA_URL }}images/img_trans.gif" alt="iAmAStupidElement" width="1" height="1" />
+        <strong>Detailansicht Kaffeemaschine</strong>
+    </div>
+
+    <div class="boxcontent">
+
+<ul class="column">
+    <li>
+        <div class="box_mini">
+            <div class="boxtitle">
+                <strong>DATEN</strong>
+            </div>
+
+            <div class="box_mini_content">
+                <div class="device_icon">
+                    <img src="{{ MEDIA_URL }}images/hasi-tmp-logo-128.png" alt="device_HASI" />
+                </div>
+
+                <div class="meta_data">
+                    <table>
+                        <tr>
+                            <th>Name: </th>
+                            <td>Senseo</td>
+                        </tr>
+                        <tr>
+                            <th>Typ: </th>
+                            <td>Kaffeemaschine</td>
+                        </tr>
+                        <tr>
+                            <th>Standort: </th>
+                            <td>Haus 5a</td>
+                        </tr>
+                        <tr>
+                            <th>Besitzer: </th>
+                            <td>Tobi</td>
+                        </tr>
+                        <tr>
+                            <th>Status: </th>
+                            <td>AN</td>
+                        </tr>
+                        <tr>
+                            <th>Installiert am: </th>
+                            <td>5.5.2011</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="clear_both"></div>
+            </div>
+        </div>
+    </li>
+
+    <li>
+
+        <div class="box_mini">
+            <div class="boxtitle">
+<!--                <img id="modIcon" class="close" src="{{ MEDIA_URL }}images/img_trans.gif" alt="iAmAStupidElement" width="1" height="1" />
+                <img id="modIcon" class="minimize" src="{{ MEDIA_URL }}images/img_trans.gif" alt="iAmAStupidElement" width="1" height="1" />-->
+
+                <Strong>Momentaner Verbrauch</Strong>
+            </div>
+
+            <div class="box_mini_content">
+
+            </div>
+
+        </div>
+    </li>
+
+    <li>
+        <div class="box_mini">
+            <div class="boxtitle">
+<!--                <img id="modIcon" class="close" src="{{ MEDIA_URL }}images/img_trans.gif" alt="iAmAStupidElement" width="1" height="1" />
+                <img id="modIcon" class="minimize" src="{{ MEDIA_URL }}images/img_trans.gif" alt="iAmAStupidElement" width="1" height="1" />-->
+
+                <Strong>Durchschnittlicher Verbrauch</Strong>
+            </div>
+
+            <div class="box_mini_content">
+                <p>50 Watt</p>
+            </div>
+
+        </div>
+    </li>
+
+</ul>
+
+<ul class="column">
+    <li>
+        <div class="box_mini">
+            <div class="boxtitle">
+<!--                <img id="modIcon" class="close" src="{{ MEDIA_URL }}images/img_trans.gif" alt="iAmAStupidElement" width="1" height="1" />
+                <img id="modIcon" class="minimize" src="{{ MEDIA_URL }}images/img_trans.gif" alt="iAmAStupidElement" width="1" height="1" />-->
+
+                <Strong>Diagramm</Strong>
+            </div>
+
+            <div class="box_mini_content">
+                <img src="{{ MEDIA_URL }}images/hasi-tmp-logo-320.png" alt="device_HASI" />
+            </div>
+
+        </div>
+    </li>
+
+</ul>
+<div class="clear_both"></div>
+
+    </div>
+</div>
+
+{% endblock %}

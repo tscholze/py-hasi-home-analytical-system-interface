@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Haus liste {% endblock %}
+
+{% block content %}
+
+{% include "box-base.html" with title=subdevice.name file="devices/meta_data.html"  %}
+{% include "box-base.html" with title="Momentaner Verbrauch"  %}
+{% include "box-base.html" with title="Durchschnittlicher Verbrauch"  %}
+{% include "box-base.html" with title="Diagramm" file="devices/diagramm.html"  %}
+
+
+
+{% endblock %}

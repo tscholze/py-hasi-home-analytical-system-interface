@@ -1,0 +1,7 @@
+<ul>
+	{% for device in gadget.gadgetsubdevice.all %}
+		{% with device.subdevice as device %}
+			<li>{% include device.model.include_template %}</li>
+		{% endwith %}
+	{% endfor %}
+</ul>
