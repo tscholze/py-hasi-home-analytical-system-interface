@@ -55,9 +55,9 @@ It runs on a lightweight open source system (Linux and Python) and uses a MySQL 
 temperature and state indicators for windows and doors has been set-up at an apartment and run from May to July 2011. HASI is / was now installed in a office room at the faculty of computer science and serves as a test-bed for further development.
 
 <center>
-<img src="https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-annotations-desktop.png" title="Desktop UI with annotations" />
+<img src="https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-annotations-desktop.png" title="Desktop UI with annotations"  width="500"/>
 
-<img src="https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-smartphone-tablet.png title="Smartphone and Tablet UI screenshot" />
+<img src="https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-smartphone-tablet-ui.png" title="Smartphone and Tablet UI screenshot" width="500"/>
 </center>
 
 
