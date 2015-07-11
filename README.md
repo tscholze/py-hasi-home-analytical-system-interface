@@ -1,8 +1,6 @@
 #HASI - Home Analytical System Interface
 
-##Abstract
-
-###eMetering for everyone
+##eMetering for everyone
 
 While the need for more efficient use of energy is commonly accepted,
 for the individual it is often difficult to act accordingly. Firstly,
@@ -36,7 +34,7 @@ by different vendors. HASI is a first try at implementing
 a layered architecture able to communicate with various devices
 through their protocols.
 
-###The team
+##The team
 
 HASI was implemented during the summer term 2011 at
 Augsburg University of Applied Sciences. The team consists of:
@@ -50,9 +48,9 @@ Augsburg University of Applied Sciences. The team consists of:
 * Christoph Biesinger
 * Felix Wagner
  
-### Technologies
+## Technologies
 It runs on a lightweight open source system (Linux and Python) and uses a MySQL database as a backend. It is able to run on small-scale, low energy consuming hardware (e.g. an IoT-device) within a user's home. Event notifications from sensors as well as power consumption measurements are logged in the database and are made accessible as a web-resource for other services. A test installation of HASI including sensors for power consumption,
 temperature and state indicators for windows and doors has been set-up at an apartment and run from May to July 2011. HASI is / was now installed in a office room at the faculty of computer science and serves as a test-bed for further development.
 
-### Keep in mind
+## Keep in mind
 HASI is out of development for years now. All dependencies are dated-out or mostly no longer available to download. This repository is a one-time mirror of Felix's Bitbucket project. 
