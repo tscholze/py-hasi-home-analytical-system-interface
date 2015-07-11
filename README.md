@@ -37,13 +37,15 @@ through their protocols.
 ##The team
 
 HASI was implemented during the summer term 2011 at
-Augsburg University of Applied Sciences. The team consists of:
+Augsburg University of Applied Sciences. The project was a part if the global research program called [IT4SE](http://it4se.informatik.fh-augsburg.de/project_german.html).
+
+The team consists of:
 
 * Miriam Berschneider
 * Jennifer Meier
 * Falk Alexander
 * Martin Gutmair
-* Thomas Hipp
+* Thomas Hipp [(Github profile)](https://github.com/monstermunchkin)
 * Tobias Scholze
 * Christoph Biesinger
 * Felix Wagner
@@ -52,9 +54,11 @@ Augsburg University of Applied Sciences. The team consists of:
 It runs on a lightweight open source system (Linux and Python) and uses a MySQL database as a backend. It is able to run on small-scale, low energy consuming hardware (e.g. an IoT-device) within a user's home. Event notifications from sensors as well as power consumption measurements are logged in the database and are made accessible as a web-resource for other services. A test installation of HASI including sensors for power consumption,
 temperature and state indicators for windows and doors has been set-up at an apartment and run from May to July 2011. HASI is / was now installed in a office room at the faculty of computer science and serves as a test-bed for further development.
 
-![alt Desktop UI with annotations](https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-annotations-desktop.png "Desktop UI with annotations")
+<center>
+<img src="https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-annotations-desktop.png" title="Desktop UI with annotations" />
 
-![alt Smartphone and Tablet UI](https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-smartphone-tablet.png "Smartphone and Tablet UI screenshot")
+<img src="https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-smartphone-tablet.png title="Smartphone and Tablet UI screenshot" />
+</center>
 
 
 ## Recommended files to read
