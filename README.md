@@ -52,5 +52,13 @@ Augsburg University of Applied Sciences. The team consists of:
 It runs on a lightweight open source system (Linux and Python) and uses a MySQL database as a backend. It is able to run on small-scale, low energy consuming hardware (e.g. an IoT-device) within a user's home. Event notifications from sensors as well as power consumption measurements are logged in the database and are made accessible as a web-resource for other services. A test installation of HASI including sensors for power consumption,
 temperature and state indicators for windows and doors has been set-up at an apartment and run from May to July 2011. HASI is / was now installed in a office room at the faculty of computer science and serves as a test-bed for further development.
 
+![alt Desktop UI with annotations](https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-annotations-desktop.png "Desktop UI with annotations")
+
+![alt Smartphone and Tablet UI](https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/screenshots/screenshot-smartphone-tablet.png "Smartphone and Tablet UI screenshot")
+
+
+## Recommended files to read
+To get a better understanding what HASI is / was. Please read the (German) [presenation slides](https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/hasi_presentation.pdf).
+
 ## Keep in mind
 HASI is out of development for years now. All dependencies are dated-out or mostly no longer available to download. This repository is a one-time mirror of Felix's Bitbucket project. 
