@@ -62,7 +62,7 @@ temperature and state indicators for windows and doors has been set-up at an apa
 
 
 ## Recommended files to read
-To get a better understanding what HASI is / was. Please read the (German) [presenation slides](https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/hasi_presentation.pdf).
+To get a better understanding what HASI is / was, please read the (German) [presentation slides](https://github.com/tscholze/py-hasi-home-analytical-system-interface/blob/master/documentation/hasi_presentation.pdf) or have a look at the [documentation folder](https://github.com/tscholze/py-hasi-home-analytical-system-interface/tree/master/documentation) of the project.
 
 ## Keep in mind
 HASI is out of development for years now. All dependencies are dated-out or mostly no longer available to download. This repository is a one-time mirror of Felix's Bitbucket project. 
