@@ -1,6 +1,6 @@
-#HASI - Home Analytical System Interface
+# HASI - Home Analytical System Interface
 
-##eMetering for everyone
+## eMetering for everyone
 
 While the need for more efficient use of energy is commonly accepted,
 for the individual it is often difficult to act accordingly. Firstly,
@@ -34,7 +34,7 @@ by different vendors. HASI is a first try at implementing
 a layered architecture able to communicate with various devices
 through their protocols.
 
-##The team
+## The team
 
 HASI was implemented during the summer term 2011 at
 Augsburg University of Applied Sciences. The project was a part if the global research program called [IT4SE](http://it4se.informatik.fh-augsburg.de/project_german.html).
